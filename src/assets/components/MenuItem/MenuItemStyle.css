@@ -1,0 +1,60 @@
+.menu_item{
+    background-color: #1c3642;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    align-items: center;
+    margin: 3px;
+}
+.menu_item .preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.menu_item .preview .menu_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 120px;
+    height: 90px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu_item .preview .menu_image img{
+    border-radius: 5px;
+    width: inherit;
+    height: inherit;
+}
+
+.menu_item .preview > p{
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+.menu_item .info{
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.menu_item .info p{
+    font-size: 18px;
+}
+.menu_item .info p span{
+    color: #EEE7BD;
+}
+.menu_item .info .add_to_baket_btn{
+    font-size: 30px;
+    color: white;
+    transition:  .1s linear;
+}
+.menu_item .info .add_to_baket_btn:active{
+    transform: scale(0.920);
+}

@@ -1,0 +1,28 @@
+.header{
+    padding: 14px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1D3E4A;
+    color: #EEE7BD;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.302);
+}
+.profile_card{
+    display: flex;
+    align-items: center;
+
+}
+.profile_logo{
+    width: 40px;
+    height: 40px;
+    background: #EEE7BD;
+    background: url('/svgs/logo.svg') no-repeat;
+    background-size: cover;
+}
+.profile_card p {
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 25px;
+    align-self: flex-end;
+}

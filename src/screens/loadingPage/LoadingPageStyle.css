@@ -1,0 +1,36 @@
+.wrapper_loading{
+    background-color: f7f7f7e7;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+.wrapper_loading .loading {
+    margin-top: 20px;
+}
+.wrapper_loading .loading .load{
+    position: relative;
+    font-size: 30px;
+    animation: loading_play;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: rotate(-90deg);
+    animation-play-state: running;
+}
+
+
+@keyframes loading_play {
+    0%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+
+}

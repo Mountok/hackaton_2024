@@ -1,0 +1,32 @@
+.footer{
+    position: fixed;
+    padding: 2px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE7BD;
+    color: #EEE7BD;
+    width: 97%;
+    border-radius: 10px;
+    bottom: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.302);
+
+}
+
+.ico{
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    font-size: 50px;
+
+
+    /* for acive */
+    
+}
+.ico:hover{
+    background-color: #1D3E4A;
+    color: #EEE7BD;
+}
+.active{
+    background-color: #1D3E4A;
+    color: #EEE7BD;
+}

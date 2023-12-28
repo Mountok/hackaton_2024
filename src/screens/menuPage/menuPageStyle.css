@@ -1,0 +1,8 @@
+.menu_main{
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
