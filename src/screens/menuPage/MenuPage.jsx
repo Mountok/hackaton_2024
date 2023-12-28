@@ -8,7 +8,6 @@ import './menuPageStyle.css';
 import axios from 'axios';
 
 const MenuPage = () => {
-
    
     // const [restaurantId,setRestaurantId] = useState(0);
     
@@ -17,6 +16,7 @@ const MenuPage = () => {
     
 
     useEffect(()=>{
+    
         let restaurantId = location.search.split('=')[1];
         console.log(restaurantId)
         const fetchData = async () => {
@@ -39,7 +39,8 @@ const MenuPage = () => {
                     menuList.map(el => 
                         (<MenuItem key={el.id} title={el.title} 
                         price={el.price}
-                        id={el.rest_id}
+                        id={el.id}
+                        menu_id={el.menu_id}
                         image={el.img}/>)
                     )
                 )

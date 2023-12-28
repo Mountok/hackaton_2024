@@ -6,6 +6,7 @@ import SettingsPage from './screens/settingsPage/settingsPage'
 import MenuPage from './screens/menuPage/menuPage'
 import LoginPage from './screens/loginPage/LoginPage'
 import QRPage from './screens/QRPage/QRPage'
+import BasketPage from './screens/basketPage/BasketPage'
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
         <Route path='/menu' element={<MenuPage/>}/>
 
         <Route path='/qr_reader' element={<QRPage/>}/>
+
+        <Route path='/basket' element={<BasketPage/>}/>
+
 
     </Routes>
   )

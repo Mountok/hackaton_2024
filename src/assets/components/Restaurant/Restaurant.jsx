@@ -12,8 +12,12 @@ const Restaurant = ({id,title,description,image}) => {
         </div>
         <div className="info">
             <p className='title'>{title}</p>
-            <p className='description'>{description}</p>
+            {/* <p className='description'>{description}</p> */}
+            <div>
             <Link className='button' to={menulink}>Открыть меню</Link>
+            <Link className='button' to={menulink}> Бронь стола </Link>
+
+            </div>
         </div>
     </section>
   )

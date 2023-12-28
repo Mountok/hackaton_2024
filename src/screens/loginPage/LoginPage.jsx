@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './LoginPageStyle.css'
+import { json } from "react-router-dom";
 
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(false);
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+
+  useEffect(()=>{
+    if(localStorage.getItem('swipe_user_basket')){
+      console.log('корзина уже есть')
+    }else{
+      localStorage.setItem('swipe_user_basket','[]')
+    }
+  },[])
 
   const handleRegistration = async (e) => {
     e.preventDefault();

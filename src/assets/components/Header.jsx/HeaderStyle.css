@@ -2,11 +2,11 @@
     padding: 14px 10px;
     display: flex;
     justify-content: space-between;
-    background-color: #1D3E4A;
+    background-color: #f5f5f5;
     color: #EEE7BD;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.302);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.302);
 }
 .profile_card{
     display: flex;
@@ -16,7 +16,6 @@
 .profile_logo{
     width: 40px;
     height: 40px;
-    background: #EEE7BD;
     background: url('/svgs/logo.svg') no-repeat;
     background-size: cover;
 }
@@ -25,4 +24,9 @@
     font-weight: 500;
     font-size: 25px;
     align-self: flex-end;
+}
+
+.profile_icons{
+    font-size: 40px;
+    color: #2d6073;
 }
