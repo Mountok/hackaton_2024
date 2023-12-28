@@ -7,6 +7,7 @@ import MenuPage from './screens/menuPage/menuPage'
 import LoginPage from './screens/loginPage/LoginPage'
 import QRPage from './screens/QRPage/QRPage'
 import BasketPage from './screens/basketPage/BasketPage'
+import ProfileMenu from './screens/profileMenu/profileMenu'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/settings' element={<SettingsPage/>}/>
         <Route path='/menu' element={<MenuPage/>}/>
-
+        <Route path='/profile' element={<ProfileMenu/>} />
         <Route path='/qr_reader' element={<QRPage/>}/>
 
         <Route path='/basket' element={<BasketPage/>}/>

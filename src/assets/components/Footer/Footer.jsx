@@ -2,6 +2,7 @@ import {React, useEffect} from 'react'
 import './FooterStyle.css'
 import {SlBasket} from 'react-icons/sl'
 import {AiOutlineHome, AiOutlineProfile, AiOutlineSetting} from 'react-icons/ai'
+import { FaCircleUser } from "react-icons/fa6";
 
 import {FaPizzaSlice, FaBasketShopping,FaMessage} from 'react-icons/fa6'
 import {BsMegaphoneFill} from 'react-icons/bs'
@@ -23,9 +24,14 @@ const Footer = () => {
             Домой
         </Link>
 
-        <Link className={(location.pathname==='/profile')?'active_link ':'link_btn'}  to='/profile'>
-            <BsMegaphoneFill className={(location.pathname==='/profile')?'ico active':'ico'}/>
+        <Link className={(location.pathname==='/contact')?'active_link ':'link_btn'}  to='/profile'>
+            <BsMegaphoneFill className={(location.pathname==='/contact')?'ico active':'ico'}/>
             Контакты
+        </Link>
+
+        <Link className={(location.pathname==='/profile')?'active_link ':'link_btn'}  to='/profile'>
+            <FaCircleUser className={(location.pathname==='/profile')?'ico active':'ico'}/>
+            Профиль
         </Link>
 
     </footer>   

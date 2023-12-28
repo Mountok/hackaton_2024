@@ -6,6 +6,7 @@ import MenuItem from '../../assets/components/MenuItem/MenuItem';
 import './menuPageStyle.css';
 
 import axios from 'axios';
+import MainTitle from '../../assets/components/MainTitle/MainTitle';
 
 const MenuPage = () => {
    
@@ -30,8 +31,10 @@ const MenuPage = () => {
   return (
     <div className="wrapper">
       <Header username='Dashuev I'/>
+      <MainTitle title='Ассортимент'/> 
 
         <main className="menu_main">
+          
             {
                 (menuList.length == 0)? (
                     <p>Загрузка меню</p>

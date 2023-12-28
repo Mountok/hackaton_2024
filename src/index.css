@@ -3,8 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+
 
 #root{
+  font-family: 'Comfortaa', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;

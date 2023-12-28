@@ -4,6 +4,7 @@ import Footer from '../../assets/components/Footer/Footer';
 import Header from '../../assets/components/Header.jsx/Header';
 import Restaurant from '../../assets/components/Restaurant/Restaurant.JSX';
 import axios from 'axios'
+import MainTitle from '../../assets/components/MainTitle/MainTitle';
 
 const HomePage = () => {
 
@@ -29,6 +30,8 @@ const HomePage = () => {
       <Header username='Dashuev I'/>
 
         <main className="home_main">
+            <MainTitle title='Рестораны'/>
+
             {(restaurants.length != 0) ?
             (
               restaurants.map((el) => (

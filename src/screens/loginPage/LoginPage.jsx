@@ -18,6 +18,13 @@ const LoginPage = () => {
     }
   },[])
 
+  const setLocalData = (name,email) => {
+    localStorage.setItem('swipe_user_name',name)
+    localStorage.setItem('swipe_user_email',email)
+    // localStorage.setItem('swipe_user_id',id)
+
+  }
+
   const handleRegistration = async (e) => {
     e.preventDefault();
     try {
@@ -31,6 +38,7 @@ const LoginPage = () => {
       );
       const token = res.data.token;
       localStorage.setItem("swipe_user_jwt", `Bearer ${token}`);
+      setLocalData(username,email);
       console.log(res);
 
     } catch (error) {
@@ -55,6 +63,7 @@ const LoginPage = () => {
         })
         token = res.data.token;
         localStorage.setItem("swipe_user_jwt", `Bearer ${token}`);
+        setLocalData(username,email);
         console.log(res)
     } catch (error) {
         if(error.response.status === 401){
