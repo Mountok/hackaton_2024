@@ -99,7 +99,7 @@ const RezervPage = () => {
         </div>
         </div>
  
-        <button className="proceed-btn"><a href="#">Бронь</a></button>
+        <button className="proceed-btn">Бронь</button>
         </div>
         </form>
     </main>

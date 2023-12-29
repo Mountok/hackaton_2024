@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './HeaderStyle.css'
 import { FaCircleUser } from "react-icons/fa6";
 import { TbShoppingCartStar } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
 const Header = ({username}) => {
+  const [userImage,setUserImage] = useState(localStorage.getItem('swipe_user_image'))
   return (
     <header className="header">
         <div className="profile_card">
-          <Link to='/profile'>
-          <FaCircleUser className='profile_icons'/>
+          <Link className='profile_icons' to='/profile' >
+            <img src={`http://10.1.1.100:5000/${userImage}`} alt="" />
+          {/* <FaCircleUser className='profile_icons'/> */}
           </Link>
         </div>
 

@@ -22,7 +22,7 @@ const MenuItem = ({ title, price, image, id, menu_id }) => {
     <section className="menu_item">
       <div className="preview">
         <div className="menu_image">
-          <img src={`http://localhost:5000/${image}`} alt="" />
+          <img src={`http://10.1.1.100:5000/${image}`} alt="" />
         </div>
         <p>{title}</p>
       </div>

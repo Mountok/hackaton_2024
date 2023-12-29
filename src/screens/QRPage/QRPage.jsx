@@ -22,7 +22,7 @@ const QRPage = () => {
           <QRCode
           size={526}
           style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-          value={`/qr_info?id=${armorId}`}
+          value={`http://10.1.1.100:5173/qr_info?id=${armorId}`}
           viewBox={`0 0 256 256`}
           />
         </div>

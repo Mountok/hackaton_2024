@@ -24,8 +24,8 @@ const Footer = () => {
             Домой
         </Link>
 
-        <Link className={(location.pathname==='/contact')?'active_link ':'link_btn'}  to='/profile'>
-            <BsMegaphoneFill className={(location.pathname==='/contact')?'ico active':'ico'}/>
+        <Link className={(location.pathname==='/contacts')?'active_link ':'link_btn'}  to='/contacts'>
+            <BsMegaphoneFill className={(location.pathname==='/contacts')?'ico active':'ico'}/>
             Контакты
         </Link>
 

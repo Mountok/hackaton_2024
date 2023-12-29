@@ -8,6 +8,7 @@ import HistoryItem from '../../assets/components/HistoryItem/HistoryItem';
 import axios from 'axios'
 const ProfileMenu = () => {
     const [name,setName] = useState('');
+    const [image,setImage] = useState('');
     const [email,setEmail] = useState('');
     const [armors, setArmors] = useState([])
 
@@ -15,9 +16,10 @@ const ProfileMenu = () => {
 
         setName(localStorage.getItem('swipe_user_name'));
         setEmail(localStorage.getItem('swipe_user_email'));
+        setImage(localStorage.getItem('swipe_user_image'));
 
         const fetchData = async () => {
-            const res  = await axios.get(`http://localhost:5000/api/armor/?email=${email}`);
+            const res  = await axios.get(`http://10.1.1.100:5000/api/armor/?email=${email}`);
             setArmors(res.data);
         }
         fetchData();
@@ -28,7 +30,7 @@ const ProfileMenu = () => {
         <div className="profile_main">
 
         <div className="profile">
-            <img className="profile-image" src="/userlogo.jpg" alt="Profile Image"/>
+            <img width='100px' height='100px' className="profile-image" src={`http://10.1.1.100:5000/${image}`} alt="Profile Image"/>
             <h1 className="profile-name">{name}</h1>
             <p className="profile-description">{email}</p>
             <p className='rating'> 100 <TbShoppingCartStar /></p>
@@ -40,7 +42,7 @@ const ProfileMenu = () => {
                     <HistoryItem key={el.id} restaurant={el.restaurant} time={el.time} date={el.data} id={el.id}/>
                 )))
             ):(
-                <p>H</p>
+                <p>пусто</p>
             )}
         
 

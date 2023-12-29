@@ -6,7 +6,7 @@ const BasketItem = ({ title, price, image, id, menu_id }) => {
     <section className="basket_item">
       <div className="preview">
         <div className="basket_image">
-          <img src={`http://localhost:5000/${image}`} alt="" />
+          <img src={`http://10.1.1.100:5000/${image}`} alt="" />
         </div>
       </div>
       <div className="info">

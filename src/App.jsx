@@ -10,6 +10,7 @@ import BasketPage from './screens/basketPage/BasketPage.jsx'
 import ProfileMenu from './screens/profileMenu/profileMenu.jsx'
 import RezervPage from './screens/rezervPage/RezervPage.jsx'
 import QRInfo from './screens/QRPage/QRInfo.jsx'
+import ContactsPage from './screens/Contacts/ContactsPage.jsx'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/qr_info' element={<QRInfo/>}/>
         <Route path='/rezerv' element={<RezervPage/>} />
         <Route path='/basket' element={<BasketPage/>}/>
+        <Route path='/contacts' element={<ContactsPage/>}/>
 
 
     </Routes>

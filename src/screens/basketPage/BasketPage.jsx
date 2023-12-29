@@ -8,16 +8,20 @@ const BasketPage = () => {
     const  [isCredit,setIdCredit] = useState(false)
     const [currentBasket, setCurrentBasket] = useState([]);
     const [payMoney,setPayMoney] = useState(0)
+
     useEffect(()=>{
         let summa = 0;
         setCurrentBasket(JSON.parse(localStorage.getItem('swipe_user_basket')))
+
         JSON.parse(localStorage.getItem('swipe_user_basket')).forEach(element => {
           summa+= Number(element.price);
         });
         setPayMoney(summa)
-    },[])
+    },[localStorage.getItem('swipe_user_basket')])
 
     const deleteItem = () => {
+      setCurrentBasket([]);
+      localStorage.setItem('swipe_user_basket','[]');
       
     }
 
@@ -29,6 +33,8 @@ const BasketPage = () => {
       {(!isCredit) ? (
          <main className="backet_main">
          <MainTitle title='Корзина'/> 
+         {(currentBasket.length!=0) ? ( <button onClick={deleteItem} className='delete_btn'>Очистить все</button> )
+         : (null)}
          {(currentBasket.length != 0) ? (
            currentBasket.map((el,index) => 
              (<BasketItem key={index}

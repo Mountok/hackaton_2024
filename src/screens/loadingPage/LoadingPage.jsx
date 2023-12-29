@@ -7,6 +7,7 @@ const LoadingPage = () => {
     const navigate = useNavigate();
     
     setTimeout(()=>{
+        
         navigate('/login')
     },3000)
 

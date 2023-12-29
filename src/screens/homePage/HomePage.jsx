@@ -39,7 +39,7 @@ const HomePage = () => {
                 id={el.id}
                 title={el.title}
                 description={el.description}
-                image={`http://localhost:5000/${el.img}`}
+                image={`http://10.1.1.100:5000/${el.img}`}
                 />
               ))
             ) :

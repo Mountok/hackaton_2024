@@ -18,9 +18,10 @@ const LoginPage = () => {
     }
   },[])
 
-  const setLocalData = (name,email) => {
+  const setLocalData = (name,email,image) => {
     localStorage.setItem('swipe_user_name',name)
     localStorage.setItem('swipe_user_email',email)
+    localStorage.setItem('swipe_user_image',image)
     // localStorage.setItem('swipe_user_id',id)
 
   }
@@ -38,7 +39,7 @@ const LoginPage = () => {
       );
       const token = res.data.token;
       localStorage.setItem("swipe_user_jwt", `Bearer ${token}`);
-      setLocalData(username,email);
+      setLocalData(username,email,res.data.user.img);
       console.log(res);
       navigate('/home')
 
@@ -64,7 +65,8 @@ const LoginPage = () => {
         })
         token = res.data.token;
         localStorage.setItem("swipe_user_jwt", `Bearer ${token}`);
-        setLocalData(res.data.user.username,email);
+        console.log(res.data)
+        setLocalData(res.data.user.username,email,res.data.user.img);
         console.log(res)
       navigate('/home')
 
@@ -102,7 +104,7 @@ const LoginPage = () => {
 
         <button onClick={handleLogIn}>Войти</button>
       </form>
-    <p onClick={handleClick} >Нету аккаунты? Создайте</p>
+    <p onClick={handleClick} >Нет аккаунта? Создайте</p>
 
     </div>
     </>
