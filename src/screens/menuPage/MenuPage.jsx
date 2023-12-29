@@ -21,7 +21,7 @@ const MenuPage = () => {
         let restaurantId = location.search.split('=')[1];
         console.log(restaurantId)
         const fetchData = async () => {
-          const res = await axios.get(`http://localhost:5000/api/menu?menu_id=${restaurantId}`);
+          const res = await axios.get(`http://10.1.1.100:5000/api/menu?menu_id=${restaurantId}`);
           setMenuList(res.data)
         }
         fetchData()

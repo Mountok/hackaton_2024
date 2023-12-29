@@ -13,7 +13,7 @@ const HomePage = () => {
   useEffect(()=>{
     const fetchData = async() => {
       try {
-        const res = await axios.get('http://localhost:5000/api/restaurant/');
+        const res = await axios.get('http://10.1.1.100:5000/api/restaurant/');
         setRestaurants(res.data)
       } catch (error) {
         console.log(error)

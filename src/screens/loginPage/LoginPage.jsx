@@ -29,7 +29,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/user/registration",
+        "http://10.1.1.100:5000/api/user/registration",
         {
           username,
           email,
@@ -56,7 +56,7 @@ const LoginPage = () => {
     try {
         let token = localStorage.getItem('swipe_user_jwt');
         console.log(token)
-        const res = await axios.post('http://localhost:5000/api/user/login',
+        const res = await axios.post('http://10.1.1.100:5000/api/user/login',
         {email,password},{
             headers: {
                 authorization: token,

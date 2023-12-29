@@ -11,7 +11,7 @@ const QRInfo = () => {
     useEffect(()=>{
         let armor_id = location.search.split('=')[1];
         const fetchData = async() => {
-            const res = await axios.get(`http://localhost:5000/api/armor/one?id=${armor_id}`);
+            const res = await axios.get(`http://10.1.1.100:5000/api/armor/one?id=${armor_id}`);
             setCurrentArmor(res.data)
         };
         fetchData()

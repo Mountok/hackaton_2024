@@ -16,7 +16,7 @@ const RezervPage = () => {
     useEffect(()=>{
         let restaurantId = location.search.split('=')[1];
         const fetchData = async () => {
-            const res = await axios.get(`http://localhost:5000/api/restaurant/rest?id=${restaurantId}`);
+            const res = await axios.get(`http://10.1.1.100:5000/api/restaurant/rest?id=${restaurantId}`);
             setCurrentRest(res.data)
         }
         fetchData();
