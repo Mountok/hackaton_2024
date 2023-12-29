@@ -1,40 +1,6 @@
-.backet_main{
-    position: relative;
-    margin-bottom: 250px;
-}
-.basket_btn{
-    position: fixed;
-    width: 97%;
-    bottom: 100px;
-    display: flex;
-    flex-direction: column;
-}
-.pay_btn{
-    display: flex;
-    background-color: #2d6073;
-    color: white;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 25px;
-    border-radius: 20px;
-    margin: 5px 0;
-}
-.pay_send_btn{
-    background-color: #e4e4e4e7;
-    display: flex;
-    border: 1px solid #2d6073;
-    color: #2d6073;
-    justify-content: space-between;
-    padding: 5px 20px;
-    font-size: 22px;
-    border-radius: 20px;
-    margin: 5px 0;
-
-}
 
 
-
-.credit-card {
+.rezerv-card {
     width: 360px;
     height: 400px;
     margin: 10px auto 0;
@@ -81,7 +47,7 @@
 }
  
 .card-number,
-.cvv-details,
+.details,
 .cvv-input input,
 .month select,
 .year select {
@@ -127,7 +93,7 @@
     background: #fff;
 }
  
-.cvv-details {
+.details {
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;
@@ -135,7 +101,7 @@
     margin-bottom: 20px;
 }
  
-.cvv-details p {
+.details p {
     margin-top: 6px;
 }
 /* Buttons Section */

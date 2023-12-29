@@ -1,0 +1,60 @@
+.qr_prev_link{
+    text-decoration: none;
+    color: black;
+}
+
+.qr_block{
+    margin-top: 20%;
+}
+
+.qr_view{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qr_view p{
+    width: 100%;
+    text-align: left;
+    color: rgb(77, 77, 77);
+    font-size: 22px;
+}
+.qr_view p span{
+    color: black;
+    font-weight: 600;
+}
+.qr_view p:nth-child(1){
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2d6073;
+}
+.qr_view p:nth-child(2){
+    margin-bottom: 5px;
+}
+.qr_view p:nth-child(3){
+    margin-bottom: 5px;
+}
+.qr_view p:nth-child(4){
+    margin-bottom: 5px;
+}
+.qr_view p:nth-child(5){
+    margin-bottom: 5px;
+}
+.qr_view p:nth-child(6){
+    margin-bottom: 5px;
+}
+.qr_view button{
+    margin-top: 10px;
+    outline: none;
+    background-color: #2d6073;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 15px;
+    
+    font-size: 25px;
+}

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 const Restaurant = ({id,title,description,image}) => {
   const menulink = `/menu?id=${id}`
+  const rezervlink = `/rezerv?id=${id}`
   return (
     <section className='restaurant'>
         <div className="image">
@@ -15,7 +16,7 @@ const Restaurant = ({id,title,description,image}) => {
             {/* <p className='description'>{description}</p> */}
             <div>
             <Link className='button' to={menulink}>Открыть меню</Link>
-            <Link className='button' to={menulink}> Бронь стола </Link>
+            <Link className='button' to={rezervlink}> Бронь стола </Link>
 
             </div>
         </div>

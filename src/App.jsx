@@ -8,6 +8,8 @@ import LoginPage from './screens/loginPage/LoginPage'
 import QRPage from './screens/QRPage/QRPage'
 import BasketPage from './screens/basketPage/BasketPage'
 import ProfileMenu from './screens/profileMenu/profileMenu'
+import RezervPage from './screens/rezervPage/RezervPage'
+import QRInfo from './screens/QRPage/QRInfo'
 
 function App() {
 
@@ -21,8 +23,9 @@ function App() {
         <Route path='/settings' element={<SettingsPage/>}/>
         <Route path='/menu' element={<MenuPage/>}/>
         <Route path='/profile' element={<ProfileMenu/>} />
-        <Route path='/qr_reader' element={<QRPage/>}/>
-
+        <Route path='/qr_generate' element={<QRPage/>}/>
+        <Route path='/qr_info' element={<QRInfo/>}/>
+        <Route path='/rezerv' element={<RezervPage/>} />
         <Route path='/basket' element={<BasketPage/>}/>
 
 

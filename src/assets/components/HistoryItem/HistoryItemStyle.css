@@ -1,0 +1,18 @@
+.hestory_item{
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 14px 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.324);
+}
+.heatory_item_info p:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d6073;
+}
+.qr{
+    font-size: 35px;
+}
